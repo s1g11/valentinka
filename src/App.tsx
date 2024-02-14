@@ -30,19 +30,19 @@ export function App() {
 
   if (yes) {
     setTimeout(()=>setIndex(index+1), 100)
-   
+
+
     return <>
       {/* <div className={s.vals}> */}
         {vs.map((_, i) => {
-          return <div className={s.val} style={{left: rand_nums[i], top: rand_nums[rand_nums.length - i]}} ><img src={`src/assets/valentinki/${i+1}.png`} alt="" /></div>
+          return <div key={i} className={s.val + ' ' + `pic${i+1}`} style={{left: rand_nums[i], top: rand_nums[rand_nums.length - i]}} ></div>
         })}
       {/* </div> */}
-      {hs.map(v => {
-        console.log(v);
+      {hs.map((_, i) => {
         
         const x = Math.floor(Math.random() * (1800 + 1))
         const y = Math.floor(Math.random() * (700 + 1))
-        return <div className={s.heart} style={{left: x, top: y}} ></div>
+        return <div key={i} className={s.heart} style={{left: x, top: y}} ></div>
       })}
     </>
   }
