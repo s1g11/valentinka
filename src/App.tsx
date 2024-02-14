@@ -43,7 +43,7 @@ export function App() {
         
         const x = Math.floor(Math.random() * (1800 + 1))
         const y = Math.floor(Math.random() * (700 + 1))
-        return <div className={s.heart} style={{backgroundImage: 'url(/src/assets/1.png)', left: x, top: y}} ></div>
+        return <div className={s.heart} style={{left: x, top: y}} ></div>
       })}
     </>
   }

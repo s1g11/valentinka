@@ -74,4 +74,5 @@ p {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
+  background-image: 'url(/src/assets/1.png)'
 }
