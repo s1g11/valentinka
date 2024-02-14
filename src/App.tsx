@@ -33,8 +33,7 @@ export function App() {
    
     return <>
       {/* <div className={s.vals}> */}
-        {vs.map((v, i) => {
-
+        {vs.map((_, i) => {
           return <div className={s.val} style={{left: rand_nums[i], top: rand_nums[rand_nums.length - i]}} ><img src={`src/assets/valentinki/${i+1}.png`} alt="" /></div>
         })}
       {/* </div> */}
