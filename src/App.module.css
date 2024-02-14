@@ -1,0 +1,77 @@
+body {
+  background-image: url('./assets/3.jpg');
+  background-size: 400px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 98vh;
+}
+
+p {
+  margin-bottom: 50px;
+}
+
+.buttons {
+  position: relative;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  width: 100px;
+  height: 200px;
+  justify-content: center;
+  display: flex;
+  font-style: normal;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button {
+  padding: 50px 50px;
+  background-image: url('./assets/da.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.da {
+  height: 20px;
+}
+
+.da:hover {
+  padding: 60px 60px;
+}
+
+.no {
+  position: absolute;
+  transition: all 0.1s ease-out;
+  background-image: url('./assets/no.png');
+  color: #000;
+}
+
+.vals {
+  width: 1000px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.val {
+  width: 300px;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.heart {
+  height: 50px;
+  width: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
