@@ -33,6 +33,7 @@ export function App() {
 
 
     return <>
+      <p className={s.foryou}>ЭТО ВСЕ ТЕБЕ!!:)</p>
       {/* <div className={s.vals}> */}
         {vs.map((_, i) => {
           return <div key={i} className={s.val + ' ' + `pic${i+1}`} style={{left: rand_nums[i], top: rand_nums[rand_nums.length - i]}} ></div>
@@ -52,7 +53,7 @@ export function App() {
       <p>Янни (Кави), ты принимаешь валентинку от меня (Рома (Романя (Ромашка)))???😘😏❤️😭🤨</p>
       <div className={s.buttons}>
         {count >= 2 && <a onClick={()=>setYes(true)} className={s.da + ' ' + s.button}>Да!</a>}
-        <a onClick={()=>alert("ээ так не договаривались!! переигрывай")} className={s.button + ' ' + s.no} style={{left: pos[0], top: pos[1]}} onMouseEnter={enterHandler}>Неа)</a>
+        <a  onClick={()=>alert("ээ так не договаривались!! переигрывай")} className={s.button + ' ' + s.no} style={{left: pos[0], top: pos[1]}} onMouseEnter={enterHandler}>Неа)</a>
       </div>
     </div>
   )
