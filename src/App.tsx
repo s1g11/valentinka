@@ -35,7 +35,7 @@ export function App() {
       {/* <div className={s.vals}> */}
         {vs.map((v, i) => {
 
-          return <div className={s.val} style={{backgroundImage: `url(${v})`, left: rand_nums[i], top: rand_nums[rand_nums.length - i]}} ></div>
+          return <div className={s.val} style={{left: rand_nums[i], top: rand_nums[rand_nums.length - i]}} ><img src={`src/assets/valentinki/${i+1}.png`} alt="" /></div>
         })}
       {/* </div> */}
       {hs.map(v => {
