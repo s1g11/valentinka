@@ -56,10 +56,22 @@ p {
 }
 
 .no {
-  position: absolute;
-  transition: all 0.1s ease-out;
-  background-image: url('./assets/no.png');
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #000;
+  background-image: url('./assets/no.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.armour {
+  /*transition: all 0.1s ease-out;*/
+  position: absolute;
+  padding: 40px;
 }
 
 .vals {

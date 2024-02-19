@@ -13,7 +13,7 @@ export function App() {
     const modx = Math.floor(Math.random() * (4)) + 1
     const mody = Math.floor(Math.random() * (4)) + 1
     const x = Math.floor(Math.random() * (700 - 50 + 1)) + 50
-    const y = Math.floor(Math.random() * (250 + 50 + 1)) + 50
+    const y = Math.floor(Math.random() * (200 + 50 + 1)) + 50
     setPos([modx === 1 ? -x : x, mody === 1 ? -y : y])
   }
 
@@ -42,7 +42,7 @@ export function App() {
       {hs.map((_, i) => {
         
         const x = Math.floor(Math.random() * (1800 + 1))
-        const y = Math.floor(Math.random() * (700 + 1))
+        const y = Math.floor(Math.random() * (800 + 1))
         return <div key={i} className={s.heart} style={{left: x, top: y}} ></div>
       })}
     </>
@@ -53,7 +53,10 @@ export function App() {
       <p>Янни (Кави), ты принимаешь валентинку от меня (Рома (Романя (Ромашка)))???😘😏❤️😭🤨</p>
       <div className={s.buttons}>
         {count >= 2 && <a onClick={()=>setYes(true)} className={s.da + ' ' + s.button}>Да!</a>}
-        <a  onClick={()=>alert("ээ так не договаривались!! переигрывай")} className={s.button + ' ' + s.no} style={{left: pos[0], top: pos[1]}} onMouseEnter={enterHandler}>Неа)</a>
+        <span style={{left: pos[0], top: pos[1]}} className={s.armour} onMouseMove={enterHandler}>
+        <a onClick={() => alert("ээ так не договаривались!! переигрывай")} className={s.no}
+            >Неа)</a>
+        </span>
       </div>
     </div>
   )
