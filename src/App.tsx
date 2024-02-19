@@ -54,7 +54,7 @@ export function App() {
       <div className={s.buttons}>
         {count >= 2 && <a onClick={()=>setYes(true)} className={s.da + ' ' + s.button}>Да!</a>}
         <span style={{left: pos[0], top: pos[1]}} className={s.armour} onMouseMove={enterHandler}>
-        <a onClick={() => alert("ээ так не договаривались!! переигрывай")} className={s.no}
+        <a onClick={() => alert("честно - приухел")} className={s.no}
             >Неа)</a>
         </span>
       </div>
